@@ -26,8 +26,32 @@
         </div>
       </section>
 
-      <img src="dice-5.png" alt="Playing dice" class="dice" />
+      <img src="dice-5.png" alt="Playing dice" id="diceId" class="dice" />
       <button class="btn btn--new">🔄 New game</button>
+      <!--Modal Button for Instructions-->
+      <button class="btn btn--how">❓ How to Play</button>
+      <div class="modal hidden">
+        <button class="close-modal">&times;</button>
+        <h1>How to Play Pig Game 😍</h1>
+        <p>
+          <ul>
+            <li>
+            The goal of the game is for 1 player to reach 100 points in their overall score to win. 
+            </li>
+            <li>
+              Each player will roll the dice several times and accumulate a score in the current round.
+              The player can either press hold to save their score or keep rolling with
+              the chance of losing their score in the current round. 
+            </li>
+            <li>When the player rolls a 1, the
+              score for the current round is lost and it is the next player's turn.</li>
+            <li>Repeat until a
+              player reaches a score of 100 to win!</li>
+          </ul>
+        </p>
+      </div>
+      <div class="overlay hidden"></div>
+      <!--End of Modal Button-->
       <button class="btn btn--roll">🎲 Roll dice</button>
       <button class="btn btn--hold">📥 Hold</button>
     </main>
